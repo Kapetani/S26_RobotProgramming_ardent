@@ -1,0 +1,5 @@
+To draw the black square, I first used the /turtle1/set_pen service to configure the turtle’s pen. I set the red, green, and blue values to zero so the pen color was black, ensured the pen was turned on, and adjusted the line width. This step controlled how the turtle would draw before any motion commands were issued.
+
+After setting the pen, I used the keyboard teleoperation node (turtle_teleop_key) to manually move the turtle. By driving the turtle forward in straight lines and then rotating it approximately 90 degrees at each corner, I was able to form a square. Because the pen was enabled, the turtle left a black trail as it moved, resulting in a black square on the screen.
+
+This method demonstrates how ROS2 services can be used to configure system parameters, while teleoperation provides real-time motion control to achieve a desired drawing.

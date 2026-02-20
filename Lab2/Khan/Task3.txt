@@ -1,0 +1,6 @@
+Method used:
+1) I set the turtle pen color to black using the /turtle1/set_pen service (r=0, g=0, b=0, pen on).
+2) I drew the square by repeatedly publishing Twist messages to /turtle1/cmd_vel:
+   - For each side, I published a forward linear velocity (linear.x > 0, angular.z = 0) multiple times to make a straight line.
+   - Then I published a rotation command (linear.x = 0, angular.z ≈ 1.57) to turn about 90 degrees.
+3) Repeating the move-then-turn sequence four times created a square.

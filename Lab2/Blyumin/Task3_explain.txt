@@ -1,0 +1,1 @@
+For Task 3, I first used the /turtle1/set_pen service to change the pen color to black ($r=0, g=0, b=0$) with a width of 3. To draw the square, I used a sequence of ros2 topic pub --once commands to send geometry_msgs/msg/Twist messages. I moved the turtle forward using a linear x-velocity of 2.0 and performed 90-degree turns by setting the angular z-velocity to 1.57 radians.
