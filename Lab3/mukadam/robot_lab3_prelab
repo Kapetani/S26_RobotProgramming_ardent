@@ -1,0 +1,30 @@
+class Robot:
+    def __init__(self, robot_id, status, location):
+        self.robot_id = robot_id
+        self.status = status
+        self.location = location
+
+    def moveBot(self, new_location):
+        self.location = new_location
+
+    def changeStatus(self):
+        self.status = not self.status
+
+    def __str__(self):
+        state = "Online" if self.status else "Offline"
+        return f"Robot {self.robot_id} is {state} at location {self.location}"
+
+
+# ---- Verification Script ----
+if __name__ == "__main__":
+    bot1 = Robot(1, True, "A3")
+
+    print(bot1)
+
+    bot1.moveBot("B2")
+    print("After moving:")
+    print(bot1)
+
+    bot1.changeStatus()
+    print("After changing status:")
+    print(bot1)
