@@ -1,0 +1,10 @@
+URDF (Unified Robot Description Format) expands on coordinate frames by adding a physical description of the robot. 
+While TF2 only tracks where frames are, URDF defines what they are using three key elements:
+
+Links: Represent the physical parts of the robot. They include <visual> tags for what the robot looks like in RViz, 
+<collision> tags for physical boundaries, and <inertial> tags for mass and balance.
+
+Joints: Define the kinematic relationship between links (e.g., whether a part is fixed, rotates, or slides).
+
+Materials: I learned to use the <material> tag to define visual properties like colors (using RGBA values). 
+This makes the robot model easier to distinguish and debug in visualization tools like RViz.
