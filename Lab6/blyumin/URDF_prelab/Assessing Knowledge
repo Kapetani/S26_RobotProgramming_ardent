@@ -1,0 +1,4 @@
+My experience with Lab 5 demonstrated that every component of a robot (e.g., the chassis, sensors, and wheels) needs a specific 
+coordinate frame to track its position and orientation in 3D space. These frames are organized into a hierarchical "Tree," 
+where each frame has exactly one parent. This coordinate system is the mathematical foundation that allows a robot to calculate 
+the relative distance between different parts, such as the distance from a sensor to an obstacle in the "world" frame.
