@@ -1,0 +1,4 @@
+Required Question: 
+	Based on this file, what can you determine about the function of this node? 
+	(e.g. what topics are utilized; what motion is possible)
+This node functions as a ROS2 driver for a differential-drive robot in Webots. It subscribes to the cmd_vel topic and converts linear.x and angular.z commands into left and right wheel motor velocities. As a result, the robot can move forward, backward, turn left, turn right, and follow curved paths. The main purpose is motion control.
